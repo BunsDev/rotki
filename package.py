@@ -47,7 +47,8 @@ APPLE_ID = 'APPLEID'
 APPLE_ID_PASS = 'APPLEIDPASS'
 X64_APPL_RUST_TARGET = 'x86_64-apple-darwin'
 ARM_APPL_RUST_TARGET = 'aarch64-apple-darwin'
-
+# Silicon MacOS users set SKIP_SQLCIPHER_VERIFICATION = true
+SKIP_SQLCIPHER_VERIFICATION='true'
 
 def log_group(name: str) -> Callable:
     def start_group(group_name: str) -> None:
